@@ -1,7 +1,8 @@
 <svg width="29" height="23" viewBox="0 0 29 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<title>ic_arrow</title>
+<title>get_inspired_button</title>
 <desc>Created using Figma</desc>
 <g id="Canvas" transform="translate(2935 -463)">
+<g id="get_inspired_button">
 <g id="ic_arrow">
 <g id="Line">
 <use xlink:href="#path0_stroke" transform="matrix(-1 -1.22465e-16 1.22465e-16 -1 -2907.5 484.107)" fill="#98B8F6"/>
@@ -11,6 +12,7 @@
 </g>
 <g id="Line Copy">
 <use xlink:href="#path2_stroke" transform="matrix(-1 -1.22465e-16 1.22465e-16 -1 -2908 475)" fill="#98B8F6"/>
+</g>
 </g>
 </g>
 </g>

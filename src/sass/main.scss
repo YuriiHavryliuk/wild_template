@@ -1,10 +1,16 @@
 @import '_normalize';
+@import '_common';
 @import '_icons';
+@import '_fonts';
+@import '_variables';
+
 
 
 
 // Your styles:
 @import 'sections/_header';
+@import 'sections/_section-skew'; 
+@import 'sections/_section-journal';
 
 @import "sections/breakpoints/xl";
 @import "sections/breakpoints/lg";

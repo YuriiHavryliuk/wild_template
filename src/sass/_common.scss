@@ -1,0 +1,53 @@
+@import '_variables';
+
+
+body{
+	font-family: Proxima Nova Light;
+}
+
+.container{
+	margin: 0 auto;
+	position: relative;
+}
+
+.section{
+    &__title{
+        text-transform: uppercase;
+        font-size: 85px;
+        line-height: 75px;
+        letter-spacing: 4px;
+        margin: 10px 0px;
+        color: $color-text;
+    }
+
+    &__img--circle{
+        border-radius: 60px;
+        float: left;
+        width: 61px;
+        height: 61px;
+        margin-right: 20px;
+        object-fit: cover;
+    }
+
+    &__person-name{
+        line-height: 61px;
+        font-size: 20px;
+        color: $color-text_light;
+    }
+    }
+
+.link__more{
+	position: absolute;
+	bottom: 60px;
+	right: 15px;
+	text-decoration: none;
+	color: $color-sign;
+  	font-size: 22px;
+	display: flex;
+	font-weight: bold;
+
+	&--arrow{
+		margin-left: 20px;
+                }
+
+            }

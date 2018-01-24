@@ -36,17 +36,20 @@
 	@if $filename == google-plus {
 		$char: "\E003";
 	}
-	@if $filename == play {
+	@if $filename == ic_arrow {
 		$char: "\E004";
 	}
-	@if $filename == search {
+	@if $filename == play {
 		$char: "\E005";
 	}
-	@if $filename == six-points {
+	@if $filename == search {
 		$char: "\E006";
 	}
-	@if $filename == twitter {
+	@if $filename == six-points {
 		$char: "\E007";
+	}
+	@if $filename == twitter {
+		$char: "\E008";
 	}
 
 	@return $char;
@@ -71,6 +74,9 @@
 }
 .icon-google-plus {
 	@include icon(google-plus);
+}
+.icon-ic_arrow {
+	@include icon(ic_arrow);
 }
 .icon-play {
 	@include icon(play);
