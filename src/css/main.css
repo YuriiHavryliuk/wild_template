@@ -469,7 +469,7 @@ body {
   src: url("../font/wild-icons.eot?#iefix") format("eot"), url("../font/wild-icons.woff2") format("woff2"), url("../font/wild-icons.woff") format("woff"), url("../font/wild-icons.ttf") format("truetype"), url("../font/wild-icons.svg#wild-icons") format("svg");
 }
 
-.icon-arrow-right:before, .icon-facebook:before, .icon-google-plus:before, .icon-ic_arrow:before, .icon-play:before, .icon-search:before, .icon-six-points:before, .icon-twitter:before {
+.icon-facebook:before, .icon-google-plus:before, .icon-play:before, .icon-search:before, .icon-six-points:before, .icon-twitter:before {
   font-family: "wild-icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -480,36 +480,28 @@ body {
   text-transform: none;
 }
 
-.icon-arrow-right:before {
+.icon-facebook:before {
   content: "";
 }
 
-.icon-facebook:before {
+.icon-google-plus:before {
   content: "";
 }
 
-.icon-google-plus:before {
+.icon-play:before {
   content: "";
 }
 
-.icon-ic_arrow:before {
+.icon-search:before {
   content: "";
 }
 
-.icon-play:before {
+.icon-six-points:before {
   content: "";
 }
 
-.icon-search:before {
-  content: "";
-}
-
-.icon-six-points:before {
-  content: "";
-}
-
 .icon-twitter:before {
-  content: "";
+  content: "";
 }
 
 @font-face {
@@ -842,19 +834,18 @@ body {
 }
 
 .section-journal {
-  background-image: url("../img/bg_journal.png");
-  position: absolute;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 150%;
   margin-top: 650px !important;
+  width: 100vw;
+  height: 120vh;
+  top: 0;
+  left: auto;
+  background: url(../img/bg_journal.png) center top no-repeat;
+  background-size: cover;
 }
 
 .section-journal__skew {
   position: absolute;
-  top: -29%;
+  top: -25%;
   background: white;
   width: 100%;
   height: 45%;
@@ -863,17 +854,50 @@ body {
 }
 
 .section-journal .section__img--triangle {
-  float: right;
   margin-top: 30px;
   width: 200px;
+  position: absolute;
+  right: 0;
+  z-index: 99;
+}
+
+.section-journal .link__more {
+  font-size: 1.5vw;
+  left: 62vw;
+  top: 68vh;
+  display: inline-table;
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+}
+
+.section-journal .link__more--text {
+  padding-right: 20px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.section-journal .link__more--play {
+  width: 1vw;
 }
 
 .section__number {
-  font-size: 150px;
-  font-weight: bold;
-  position: absolute;
-  left: 53%;
-  margin-top: 222px;
+  -webkit-mask: url(../img/mask_bg_journal.png) center top no-repeat;
+  -webkit-mask-size: cover;
+  width: 98vw;
+  height: 120vh;
+  color: #333;
+  margin: 0;
+  letter-spacing: -0.03em;
+  position: relative;
+}
+
+.section__odometr {
+  position: fixed;
+  display: inline-block;
+  padding: 30vh 0 0 52vw;
+  font-size: 20vw;
+  text-align: center;
   color: white;
 }
 

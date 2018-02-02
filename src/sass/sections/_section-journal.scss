@@ -1,16 +1,15 @@
 .section-journal{
-	background-image: url('../img/bg_journal.png');
-	position: absolute;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 150%;
 	margin-top: 650px !important;
+	width: 100vw;
+	height: 120vh;
+	top: 0;
+	left: auto;
+	background: url(../img/bg_journal.png) center top no-repeat;
+	background-size: cover;
 
 	&__skew{
 	    position: absolute;
-	    top: -29%;
+	    top: -25%;
 	    background: white;
 	    width: 100%;
 	    height: 45%;
@@ -18,18 +17,52 @@
     }
 
     & .section__img--triangle{
-    	float: right;
-    	margin-top: 30px;
-    	width: 200px;
+		margin-top: 30px;
+		width: 200px;
+		position: absolute;
+		right: 0;
+		z-index: 99;
     }
+
+    & .link__more{
+		font-size: 1.5vw;
+	    left: 62vw;
+		top: 68vh;
+		display: inline-table;
+	    position: absolute;
+	    color: white;
+	    text-transform: uppercase;
+}
+	& .link__more--text{
+		padding-right: 20px;
+		letter-spacing: 2px;
+		font-weight: 400;
+	}
+
+	& .link__more--play{
+		width: 1vw;
+	}
+
 }
 
 .section__number{
-	font-size: 150px;
-	font-weight: bold;
-	position: absolute;
-    left: 53%;
-    margin-top: 222px;
-	color: white;
+	-webkit-mask: url(../img/mask_bg_journal.png) center top no-repeat;
+	-webkit-mask-size: cover;
+	width: 98vw;
+	height: 120vh;
+	color: #333;
+	margin: 0;
+	letter-spacing: -0.03em;
+	position: relative;
 }
+
+.section__odometr{
+	position: fixed;
+	display: inline-block;
+    padding: 30vh 0 0 52vw;
+    font-size: 20vw;
+	text-align: center;
+	color: white;
+  }
+
 
