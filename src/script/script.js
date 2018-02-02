@@ -24,3 +24,20 @@
         arrows: false,
     });
 	});
+
+    // START ODOMETER COUNT //
+    $.each($('.odometer'), function(index, value) { // reset to zero
+        $(value).text('0')
+    });
+
+    $('.section__odometr').on('mouseover', function () {
+        var dataStat = {
+            odo1: 714
+        };
+        $.each(dataStat, function(key, value) {
+            $('#'+key).text(value);
+        })
+    });
+    // END ODOMETER COUNT //
+
+

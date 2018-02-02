@@ -509,6 +509,79 @@ body {
   src: url("../font/ProximaNova-Light.woff");
 }
 
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-default .odometer-digit {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer, .odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  visibility: hidden;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-default .odometer-digit .odometer-digit-inner {
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon {
+  display: block;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon-inner {
+  display: block;
+  -webkit-backface-visibility: hidden;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-value, .odometer.odometer-theme-default .odometer-digit .odometer-value {
+  display: block;
+  -webkit-transform: translateZ(0);
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value, .odometer.odometer-theme-default .odometer-digit .odometer-value.odometer-last-value {
+  position: absolute;
+}
+
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
 .header {
   background-image: url("../img/bg_header.png");
   position: absolute;
@@ -836,7 +909,7 @@ body {
 .section-journal {
   margin-top: 650px !important;
   width: 100vw;
-  height: 120vh;
+  height: 140vh;
   top: 0;
   left: auto;
   background: url(../img/bg_journal.png) center top no-repeat;
@@ -845,7 +918,7 @@ body {
 
 .section-journal__skew {
   position: absolute;
-  top: -25%;
+  top: -28%;
   background: white;
   width: 100%;
   height: 45%;
@@ -862,8 +935,8 @@ body {
 }
 
 .section-journal .link__more {
-  font-size: 1.5vw;
-  left: 62vw;
+  font-size: 1.7vw;
+  left: 64vw;
   top: 68vh;
   display: inline-table;
   position: absolute;
@@ -872,20 +945,20 @@ body {
 }
 
 .section-journal .link__more--text {
-  padding-right: 20px;
+  padding-right: 15px;
   letter-spacing: 2px;
   font-weight: 400;
 }
 
 .section-journal .link__more--play {
-  width: 1vw;
+  width: 0.9vw;
 }
 
 .section__number {
   -webkit-mask: url(../img/mask_bg_journal.png) center top no-repeat;
   -webkit-mask-size: cover;
   width: 98vw;
-  height: 120vh;
+  height: 140vh;
   color: #333;
   margin: 0;
   letter-spacing: -0.03em;
@@ -895,8 +968,8 @@ body {
 .section__odometr {
   position: fixed;
   display: inline-block;
-  padding: 30vh 0 0 52vw;
-  font-size: 20vw;
+  padding: 25vh 0 0 50vw;
+  font-size: 19vw;
   text-align: center;
   color: white;
 }
