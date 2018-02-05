@@ -1,9 +1,5 @@
-.block-skew {
-    position: absolute;
-    top: 117%;
-    background: white;
-    width: 100%;
-    height: 100%;
+.wrapper {
+    margin-top: 56%;
     transform: skewY(9deg);
 
     & .section{

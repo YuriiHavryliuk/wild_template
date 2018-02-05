@@ -1,12 +1,23 @@
 .header{
 	background-image: url('../img/bg_header.png');
-	position: absolute;
 	background-position: bottom center;
+	position: absolute;
+	top: 0;
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 132%;
+	height: 130vh;
 	padding-top: 50px;
+
+
+	&__skew{
+		transform: skewY(9deg);
+		position: absolute;
+		top: 85%;
+		background: white;
+		width: 100%;
+		height: 45%;
+	}
 
 	&__logo--opacity{
     		opacity: 0;

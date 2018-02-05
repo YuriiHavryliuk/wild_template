@@ -636,13 +636,24 @@ blockquote {
 
 .header {
   background-image: url("../img/bg_header.png");
-  position: absolute;
   background-position: bottom center;
+  position: absolute;
+  top: 0;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 132%;
+  height: 130vh;
   padding-top: 50px;
+}
+
+.header__skew {
+  -webkit-transform: skewY(9deg);
+          transform: skewY(9deg);
+  position: absolute;
+  top: 85%;
+  background: white;
+  width: 100%;
+  height: 45%;
 }
 
 .header__logo--opacity {
@@ -729,17 +740,13 @@ blockquote {
   color: white;
 }
 
-.block-skew {
-  position: absolute;
-  top: 117%;
-  background: white;
-  width: 100%;
-  height: 100%;
+.wrapper {
+  margin-top: 56%;
   -webkit-transform: skewY(9deg);
           transform: skewY(9deg);
 }
 
-.block-skew .section {
+.wrapper .section {
   width: 100%;
   -webkit-transform: skewY(-9deg);
           transform: skewY(-9deg);
@@ -747,22 +754,22 @@ blockquote {
   will-change: transform;
 }
 
-.block-skew .section__header {
+.wrapper .section__header {
   float: left;
   position: absolute;
   z-index: 10;
 }
 
-.block-skew .section-impressive {
+.wrapper .section-impressive {
   padding-bottom: 120px;
 }
 
-.block-skew .section-impressive .section__subtitle {
+.wrapper .section-impressive .section__subtitle {
   color: #4e4e4e;
   margin: 8px 0;
 }
 
-.block-skew .images {
+.wrapper .images {
   width: 57%;
   float: left;
   max-height: 430px;
@@ -774,12 +781,12 @@ blockquote {
   margin-top: -7%;
 }
 
-.block-skew .images__main {
+.wrapper .images__main {
   position: relative;
   width: 100%;
 }
 
-.block-skew .images__other {
+.wrapper .images__other {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -804,7 +811,7 @@ blockquote {
   margin-left: -10px;
 }
 
-.block-skew .images__item {
+.wrapper .images__item {
   width: 40%;
   height: 28%;
   -webkit-box-shadow: 0 30px 30px 0 rgba(140, 153, 191, 0.2);
@@ -814,7 +821,7 @@ blockquote {
   margin-bottom: 10px;
 }
 
-.block-skew .images__item--big {
+.wrapper .images__item--big {
   width: 85%;
   height: 83%;
   position: absolute;
@@ -1490,6 +1497,25 @@ blockquote {
 .footer__copyright {
   font-size: 20px;
   color: #95a9b1;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__icon {
+  text-decoration: none;
+  color: #95a9b1;
+  margin-left: 30px;
+  font-size: 20px;
 }
 
 @media (min-width: 1200px) {
