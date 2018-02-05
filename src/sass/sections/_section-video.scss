@@ -118,5 +118,65 @@
 		}
 
 		}
+	& .stories{
+		&__title{
+			color: #518da3;
+			font-size: 25px;
+			text-transform: uppercase;
+			text-align: center;
+			margin-top: 40px;
+			letter-spacing: 8px;
+		}
+
+		&__items{
+			display: flex;
+		}
+
+		&__item{
+			border: 1px solid #b1b1b1;
+			border-radius: 10px;
+			width: 28%;
+			margin-left: 3%;
+			height: 220px;
+			position: relative;
+			text-align: center;
+			padding: 2px;
+		}
+		&__img--circle{
+			width: 60px;
+			height: 60px;
+			border-radius: 60px;
+			position: relative;
+			margin-top: 20px;
+		}
+		
+		&__category{
+			color: $color-text_light;
+		}
+
+		&__dsc{
+			margin-top: 20px;
+			color: #4e4e4e;
+			font-weight: bold;
+			font-size: 14px;
+		}
+		&__by{
+			color: $color-text_light;
+			font-size: 15px;
+		}
+		
+		& .link__more{
+			bottom: 10px;
+		}
+
+		&__play{
+			width: 14px;
+			height: 20px;
+			position: absolute;
+			left: 50%;
+			top: 40px;
+			transform: translateX(-40%);
+		}
+	}
 	
 }

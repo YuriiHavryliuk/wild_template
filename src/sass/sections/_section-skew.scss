@@ -10,6 +10,7 @@
         width: 100%;
         transform: skewY(-9deg);
         margin: 0 auto;
+        will-change: transform;
 
         &__header{
             float: left;
