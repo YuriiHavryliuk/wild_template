@@ -1,0 +1,22 @@
+.footer{
+    background-color: #e8edef;
+    margin-top: 40px !important;
+    padding: 10px 0;
+
+    &__copyright{
+        font-size: 20px;
+        color: #95a9b1;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__icon{
+        text-decoration: none;
+        color: #95a9b1;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+}

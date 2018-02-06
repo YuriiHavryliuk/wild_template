@@ -1,0 +1,12 @@
+<svg width="10" height="13" viewBox="0 0 10 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>ic_play copy</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2893 -2954)">
+<g id="ic_play copy">
+<use xlink:href="#path0_fill" transform="translate(-2893 2953)" fill="#FFFFFF"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 3.21942 13.089C 1.90418 14.1007 0 13.1631 0 11.5038L 0 3.4956C 0 1.83626 1.90418 0.898635 3.21942 1.91036L 8.42473 5.91444C 9.4655 6.71503 9.4655 8.28434 8.42473 9.08494L 3.21942 13.089Z"/>
+</defs>
+</svg>

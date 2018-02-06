@@ -1,0 +1,93 @@
+.header{
+	background-image: url('../img/bg_header.png');
+	background-position: bottom center;
+	position: absolute;
+	top: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 130vh;
+	padding-top: 50px;
+
+
+	&__skew{
+		transform: skewY(9deg);
+		position: absolute;
+		top: 85%;
+		background: white;
+		width: 100%;
+		height: 45%;
+	}
+
+	&__logo--opacity{
+    		opacity: 0;
+    		display: inline;
+    	}
+
+	
+
+	&__navbar{
+		background-color: white;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 25px;
+
+
+		& .nav{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: flex-end;
+			list-style: none;
+			margin: 0;
+			align-items: center;
+
+
+			&__item{
+				margin-left: 40px;
+				font-size: 14px;
+				letter-spacing: 1.6px;
+				text-transform: uppercase;
+			}
+
+			&__link{
+				text-decoration: none;
+				color: #c1b2b1;
+			}
+
+			&__search{
+				background-image: url(../icon/search.svg);
+				width: 23px;
+				height: 23px;
+				display: block;
+				font-size: 10px;
+}
+	}
+}
+	&__content{
+		text-align: center;
+		color: white;
+		margin-top: 180px;
+	}
+
+	&__title{
+		text-transform: uppercase;
+		font-size: 22px;
+		margin-bottom: 0px;
+		letter-spacing: 8px;
+
+	}
+
+	&__subtitle{
+		text-transform: uppercase;
+		font-size: 100px;
+		font-weight: bold;
+		margin-top: 0px;
+		margin-bottom: 30px;
+		letter-spacing: 8.3px;
+	}
+	&__button{
+		border: solid 2px rgba(255, 255, 255, 0.8);
+		color: white;
+	}
+}

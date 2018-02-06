@@ -1,0 +1,146 @@
+.contact{
+    padding-top: 80px;
+
+    &__row{
+        clear: both;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+    & .section__header{
+        position: relative;
+    }
+
+    &__img{
+        width: 345px;
+        position: relative;
+        padding-top: 2px;
+
+        &--mask{
+            background-image: linear-gradient(to bottom, #98b8f6, rgba(0, 0, 0, 0));
+            width: 100%;
+            height: 273px;
+            position: absolute;
+            top: 0;
+        }
+       
+    }
+    &__stat{
+        flex: 20%;
+        padding-right: 20px;
+    }
+
+    & .stat{
+        text-align: center;
+        
+        &__title{
+            text-transform: uppercase;
+            font-size: 30px;
+            color: #4e4e4e;
+            margin: 60px 0 0 0;
+        }
+        &__subtitle{
+            font-size: 20px;
+            color: $color-text_light;
+            margin: 0 0 30px 0;
+        }
+
+        &__badge{
+            background-image: url(../img//svg/circle-colored.svg); 
+            width: 100px;
+            height: 100px;
+            position: relative;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+
+        &__number{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            color: #31373b;
+            font-weight: bold;
+        }
+
+        &__item{
+            font-size: 15px;
+            line-height: 28px;
+            margin: 0;
+            color: #a8c1f3;
+
+            &--video{
+                color: #bfd4e8;
+            }
+            &--design{
+                color: #f8e1d9;
+            }
+        }
+    }
+    & .form__wrapper{
+        flex: 50%;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px 10px 70px;;
+    }
+
+
+    &__team{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+
+
+    & .circle{
+        position: absolute;
+        right: 30%;
+        width: 180px;
+        height: 180px;
+        top: 20px;
+    }
+
+    &__block-logo{
+        flex: 50%;
+        position: relative;
+    }
+    &__logo{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-70%, -50%);
+    }
+
+    &__info{
+        display: flex;
+        flex: 45%;
+        justify-content: space-around;
+
+    }
+}
+
+.info{
+    &__list{
+        list-style: none;
+    }
+
+    &__title{
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #95a9b1;
+        font-weight: bold;
+    }
+
+    &__item{
+        margin-top: 15px;
+    }
+    &__link{
+        text-decoration: none;
+        color: #98b8f6;
+        font-size: 18px;
+    }
+}

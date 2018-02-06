@@ -1,0 +1,23 @@
+@import '_normalize';
+@import '_common';
+@import '_icons';
+@import '_fonts';
+@import '_variables';
+
+//odometr
+@import '_odometer-theme-default';
+
+
+// Your styles:
+@import 'sections/_header';
+@import 'sections/_section-skew'; 
+@import 'sections/_section-journal';
+@import 'sections/_section-video'; 
+@import 'sections/_section-contact';
+@import 'sections/_footer';
+
+@import "sections/breakpoints/xl";
+@import "sections/breakpoints/lg";
+@import "sections/breakpoints/md";
+@import "sections/breakpoints/sm";
+@import "sections/breakpoints/xs";

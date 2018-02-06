@@ -1,0 +1,25 @@
+<svg width="70" height="70" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>player</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(4139 -3613)">
+<g id="player">
+<g id="Rectangle 26 Copy">
+<use xlink:href="#path0_fill" transform="translate(-4139 3613)" fill="#FFFFFF" fill-opacity="0.1"/>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(-4139 3613)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(-4139 3613)" fill="#FFFFFF" fill-opacity="0.8"/>
+</g>
+</g>
+<g id="Triangle 1 Copy">
+<use xlink:href="#path2_fill" transform="translate(-4110 3636)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 35C 0 15.67 15.67 0 35 0C 54.33 0 70 15.67 70 35C 70 54.33 54.33 70 35 70C 15.67 70 0 54.33 0 35Z"/>
+<path id="path1_stroke_2x" d="M 35 68C 16.7746 68 2 53.2254 2 35L -2 35C -2 55.4345 14.5655 72 35 72L 35 68ZM 68 35C 68 53.2254 53.2254 68 35 68L 35 72C 55.4345 72 72 55.4345 72 35L 68 35ZM 35 2C 53.2254 2 68 16.7746 68 35L 72 35C 72 14.5655 55.4345 -2 35 -2L 35 2ZM 35 -2C 14.5655 -2 -2 14.5655 -2 35L 2 35C 2 16.7746 16.7746 2 35 2L 35 -2Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 3.21942 21.6462C 1.90418 22.6579 0 21.7203 0 20.0609L 0 3.18438C 0 1.52503 1.90418 0.587409 3.21942 1.59913L 14.1892 10.0374C 15.2299 10.838 15.2299 12.4073 14.1892 13.2079L 3.21942 21.6462Z"/>
+</defs>
+</svg>
