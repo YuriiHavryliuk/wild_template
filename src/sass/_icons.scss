@@ -27,6 +27,7 @@
 @function icon-char($filename) {
 	$char: "";
 
+<<<<<<< HEAD
 	@if $filename == facebook {
 		$char: "\E001";
 	}
@@ -45,6 +46,29 @@
 	@if $filename == twitter {
 		$char: "\E006";
 	}
+=======
+	@if $filename == arrow-right {
+		$char: "\E001";
+	}
+	@if $filename == facebook {
+		$char: "\E002";
+	}
+	@if $filename == google-plus {
+		$char: "\E003";
+	}
+	@if $filename == play {
+		$char: "\E004";
+	}
+	@if $filename == search {
+		$char: "\E005";
+	}
+	@if $filename == six-points {
+		$char: "\E006";
+	}
+	@if $filename == twitter {
+		$char: "\E007";
+	}
+>>>>>>> d37206ff948bb63f164a1c247a01d8879120f1ba
 
 	@return $char;
 }
@@ -60,6 +84,12 @@
 	}
 }
 
+<<<<<<< HEAD
+=======
+.icon-arrow-right {
+	@include icon(arrow-right);
+}
+>>>>>>> d37206ff948bb63f164a1c247a01d8879120f1ba
 .icon-facebook {
 	@include icon(facebook);
 }
