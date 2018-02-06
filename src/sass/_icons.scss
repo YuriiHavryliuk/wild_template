@@ -45,6 +45,29 @@
 	@if $filename == twitter {
 		$char: "\E006";
 	}
+  
+	@if $filename == arrow-right {
+		$char: "\E001";
+	}
+	@if $filename == facebook {
+		$char: "\E002";
+	}
+	@if $filename == google-plus {
+		$char: "\E003";
+	}
+	@if $filename == play {
+		$char: "\E004";
+	}
+	@if $filename == search {
+		$char: "\E005";
+	}
+	@if $filename == six-points {
+		$char: "\E006";
+	}
+	@if $filename == twitter {
+		$char: "\E007";
+	}
+
 
 	@return $char;
 }
@@ -58,6 +81,10 @@
 		}
 		content: icon-char($filename);
 	}
+}
+
+.icon-arrow-right {
+	@include icon(arrow-right);
 }
 
 .icon-facebook {
@@ -78,4 +105,4 @@
 .icon-twitter {
 	@include icon(twitter);
 }
-
+
