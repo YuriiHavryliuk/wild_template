@@ -412,6 +412,7 @@ th {
   padding: 0;
 }
 
+
 body {
   font-family: Proxima Nova Light;
 }
@@ -513,6 +514,10 @@ blockquote {
   text-transform: uppercase;
   color: white;
   font-size: 20px;
+
+.container {
+  margin: 0 auto;
+
 }
 
 @font-face {
@@ -521,7 +526,13 @@ blockquote {
   src: url("../font/wild-icons.eot?#iefix") format("eot"), url("../font/wild-icons.woff2") format("woff2"), url("../font/wild-icons.woff") format("woff"), url("../font/wild-icons.ttf") format("truetype"), url("../font/wild-icons.svg#wild-icons") format("svg");
 }
 
+
 .icon-facebook:before, .icon-google-plus:before, .icon-play:before, .icon-search:before, .icon-six-points:before, .icon-twitter:before {
+
+.icon-facebook:before, .icon-google-plus:before, .icon-play:before, .icon-search:before, .icon-six-points:before, .icon-twitter:before {
+
+.icon-arrow-right:before, .icon-facebook:before, .icon-google-plus:before, .icon-play:before, .icon-search:before, .icon-six-points:before, .icon-twitter:before {
+
   font-family: "wild-icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -531,6 +542,7 @@ blockquote {
   text-decoration: none;
   text-transform: none;
 }
+
 
 .icon-facebook:before {
   content: "";
@@ -1516,7 +1528,35 @@ blockquote {
   color: #95a9b1;
   margin-left: 30px;
   font-size: 20px;
+
+.icon-arrow-right:before {
+  content: "";
 }
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-google-plus:before {
+  content: "";
+}
+
+.icon-play:before {
+  content: "";
+}
+
+.icon-search:before {
+  content: "";
+}
+
+.icon-six-points:before {
+  content: "";
+}
+
+.icon-twitter:before {
+  content: "";
+}
+
 
 @media (min-width: 1200px) {
   .container {
@@ -1527,7 +1567,10 @@ blockquote {
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
     width: 960px;
+
     margin: 0 auto;
+
+
   }
 }
 
