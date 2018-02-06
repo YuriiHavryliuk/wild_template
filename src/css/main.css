@@ -412,7 +412,7 @@ th {
   padding: 0;
 }
 
-<<<<<<< HEAD
+
 body {
   font-family: Proxima Nova Light;
 }
@@ -514,10 +514,10 @@ blockquote {
   text-transform: uppercase;
   color: white;
   font-size: 20px;
-=======
+
 .container {
   margin: 0 auto;
->>>>>>> d37206ff948bb63f164a1c247a01d8879120f1ba
+
 }
 
 @font-face {
@@ -526,11 +526,13 @@ blockquote {
   src: url("../font/wild-icons.eot?#iefix") format("eot"), url("../font/wild-icons.woff2") format("woff2"), url("../font/wild-icons.woff") format("woff"), url("../font/wild-icons.ttf") format("truetype"), url("../font/wild-icons.svg#wild-icons") format("svg");
 }
 
-<<<<<<< HEAD
+
 .icon-facebook:before, .icon-google-plus:before, .icon-play:before, .icon-search:before, .icon-six-points:before, .icon-twitter:before {
-=======
+
+.icon-facebook:before, .icon-google-plus:before, .icon-play:before, .icon-search:before, .icon-six-points:before, .icon-twitter:before {
+
 .icon-arrow-right:before, .icon-facebook:before, .icon-google-plus:before, .icon-play:before, .icon-search:before, .icon-six-points:before, .icon-twitter:before {
->>>>>>> d37206ff948bb63f164a1c247a01d8879120f1ba
+
   font-family: "wild-icons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -541,7 +543,7 @@ blockquote {
   text-transform: none;
 }
 
-<<<<<<< HEAD
+
 .icon-facebook:before {
   content: "";
 }
@@ -1526,7 +1528,7 @@ blockquote {
   color: #95a9b1;
   margin-left: 30px;
   font-size: 20px;
-=======
+
 .icon-arrow-right:before {
   content: "";
 }
@@ -1555,10 +1557,6 @@ blockquote {
   content: "";
 }
 
-.section--header h1 {
-  color: gray;
->>>>>>> d37206ff948bb63f164a1c247a01d8879120f1ba
-}
 
 @media (min-width: 1200px) {
   .container {
@@ -1569,10 +1567,10 @@ blockquote {
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
     width: 960px;
-<<<<<<< HEAD
+
     margin: 0 auto;
-=======
->>>>>>> d37206ff948bb63f164a1c247a01d8879120f1ba
+
+
   }
 }
 
