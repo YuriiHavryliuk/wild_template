@@ -1,0 +1,87 @@
+@font-face {
+	font-family: "wild-icons";
+	src: url('../font/wild-icons.eot');
+	src: url('../font/wild-icons.eot?#iefix') format('eot'),
+		url('../font/wild-icons.woff2') format('woff2'),
+		url('../font/wild-icons.woff') format('woff'),
+		url('../font/wild-icons.ttf') format('truetype'),
+		url('../font/wild-icons.svg#wild-icons') format('svg');
+}
+
+@mixin icon-styles {
+	font-family: "wild-icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon {
+	@include icon-styles;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == arrow-right {
+		$char: "\E001";
+	}
+	@if $filename == facebook {
+		$char: "\E002";
+	}
+	@if $filename == google-plus {
+		$char: "\E003";
+	}
+	@if $filename == play {
+		$char: "\E004";
+	}
+	@if $filename == search {
+		$char: "\E005";
+	}
+	@if $filename == six-points {
+		$char: "\E006";
+	}
+	@if $filename == twitter {
+		$char: "\E007";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon-styles;
+		}
+		content: icon-char($filename);
+	}
+}
+
+.icon-arrow-right {
+	@include icon(arrow-right);
+}
+.icon-facebook {
+	@include icon(facebook);
+}
+.icon-google-plus {
+	@include icon(google-plus);
+}
+.icon-play {
+	@include icon(play);
+}
+.icon-search {
+	@include icon(search);
+}
+.icon-six-points {
+	@include icon(six-points);
+}
+.icon-twitter {
+	@include icon(twitter);
+}
+
